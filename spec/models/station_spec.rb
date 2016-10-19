@@ -15,7 +15,10 @@ RSpec.describe Station, :type => :model do
       })
   }
 
-  it "has a name" do
-    expect(station.name).to eq("UDR")
+  it "has all the attributes of a station" do
+    expect(station.station_name).to eq("UDR")
+    expect(station.access_days_time).to eq("24 hours daily")
+    expect(station.fuel_type_code).to eq("ELEC")
+    expect(station.distance).to eq(0.3117)
   end
 end
