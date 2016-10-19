@@ -15,8 +15,8 @@ class SearchController < ApplicationController
       req.params['api_key'] = 'I6JZ4q6YZSgnPLrcuOM3smCSaG80m2YFHkmyo2uq'
       req.params['format'] = 'JSON'
     end
-    
     response = JSON.parse(raw_response.body)
+    binding.pry
     @stations = response["fuel_stations"]
   end
 end
