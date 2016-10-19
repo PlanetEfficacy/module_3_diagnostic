@@ -21,4 +21,6 @@ RSpec.describe Station, :type => :model do
     expect(station.fuel_type_code).to eq("ELEC")
     expect(station.distance).to eq(0.3117)
   end
+
+  # it "has an address"
 end

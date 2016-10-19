@@ -9,5 +9,7 @@ class Station
     @access_days_time = raw_station["access_days_time"]
     @fuel_type_code = raw_station["fuel_type_code"]
     @distance = raw_station["distance"]
+    # @address =
   end
+
 end
