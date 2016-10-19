@@ -23,7 +23,7 @@ RSpec.feature "user searches by zipcode" do
     within("table") do
       expect(page).to have_content("Name")
       expect(page).to have_content("Address")
-      expect(page).to have_content("Fuel Types")
+      expect(page).to have_content("Fuel Type")
       expect(page).to have_content("Distance")
       expect(page).to have_content("Access Times")
     end
