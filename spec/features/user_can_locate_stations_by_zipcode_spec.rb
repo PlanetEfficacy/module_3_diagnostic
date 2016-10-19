@@ -12,7 +12,7 @@
 RSpec.feature "user searches by zipcode" do
   scenario "and gets a search page with a list of 10 stations" do
     visit root_path
-    fill_in "search", with: "80203"
+    fill_in "q", with: "80203"
     click_button "Locate"
 
     expect(current_path).to eq(search_path)
