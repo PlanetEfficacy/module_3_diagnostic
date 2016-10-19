@@ -17,12 +17,10 @@ RSpec.feature "user searches by zipcode" do
 
     expect(current_path).to eq(search_path)
     expect(page).to have_content("10 closest stations within 6 miles sorted by distance:")
-    expect(page).to have_css("li", count: 10)
-    expect(page).to have_content("Electric")
-    expect(page).to have_content("Propane")
-    expect(page).to_not have_content("some other station type")
+    expect(page).to have_css("tr", count: 11)
+    expect(page).to have_content("ELEC")
 
-    within("li") do
+    within("table") do
       expect(page).to have_content("Name")
       expect(page).to have_content("Address")
       expect(page).to have_content("Fuel Types")

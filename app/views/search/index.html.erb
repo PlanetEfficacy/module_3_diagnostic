@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>10 closest stations within 6 miles sorted by distance:</h3>
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Fuel Type</th>
+      <th>Distance</th>
+      <th>Access Times</th>
+    </tr>
+    <% @stations.each do |station| %>
+      <tr>
+        <td><%= station["station_name"] %></td>
+        <td><%= station["street_address"] %>, <%= station["city"] %>, <%= station["zip"] %></td>
+        <td><%= station["fuel_type_code"] %></td>
+        <td><%= station["distance"] %></td>
+        <td><%= station["access_days_time"] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
