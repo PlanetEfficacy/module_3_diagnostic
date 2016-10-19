@@ -23,7 +23,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'better_errors'
-  gem 'vcr'
+  gem 'pry'
+  # gem 'vcr'
   gem 'webmock'
 end
 
