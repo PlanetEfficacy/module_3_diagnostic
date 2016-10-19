@@ -5,6 +5,6 @@ describe FuelStationService do
     service = FuelStationService.new(80203)
     stations = service.stations
     expect(stations.count).to eq(10)
-    expect(stations.first["name"]).to eq("UDR")
+    expect(stations.first["station_name"]).to eq("UDR")
   end
 end

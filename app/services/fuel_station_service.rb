@@ -15,7 +15,7 @@ class FuelStationService
       req.params['format'] = 'JSON'
     end
 
-    JSON.parse(raw_response.body)
+    response = JSON.parse(raw_response.body)
     return response["fuel_stations"]
   end
 
